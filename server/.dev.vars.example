@@ -1,0 +1,2 @@
+# A passphrase only you know. The setup page asks for it before anyone can claim this server.
+SETUP_PASSPHRASE=

@@ -1,0 +1,9 @@
+node_modules/
+main.js
+*.map
+.wrangler/
+.dev.vars
+coverage/
+dist/
+.DS_Store
+data.json

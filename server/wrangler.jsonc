@@ -1,0 +1,22 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "relay-flare",
+	"main": "src/worker/index.ts",
+	"compatibility_date": "2026-10-01",
+	"compatibility_flags": ["nodejs_compat"],
+	"durable_objects": {
+		"bindings": [
+			{ "name": "CONTROL", "class_name": "ControlPlane" },
+			{ "name": "FOLDERS", "class_name": "FolderRoom" },
+			{ "name": "RESERVED", "class_name": "ReservedObject" }
+		]
+	},
+	"migrations": [
+		{ "tag": "v1", "new_sqlite_classes": ["ControlPlane", "FolderRoom", "ReservedObject"] }
+	],
+	"observability": { "enabled": true }
+
+	// Attachments need R2. To enable them, uncomment this block (or run the
+	// "relay-flare update" workflow with action "enable-r2"), then redeploy.
+	// ,"r2_buckets": [{ "binding": "BLOBS", "bucket_name": "relay-flare-blobs" }]
+}

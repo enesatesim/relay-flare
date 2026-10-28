@@ -1,0 +1,9 @@
+{
+	"id": "relay-flare",
+	"name": "Relay Flare",
+	"version": "0.1.0",
+	"minAppVersion": "1.11.4",
+	"description": "Precise real-time sync and collaboration for folders, backed by your own Cloudflare account.",
+	"author": "Relay Flare contributors",
+	"isDesktopOnly": false
+}
